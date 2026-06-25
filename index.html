@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Expense Tracker</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Team Expense Tracker</h1>
+    </div>
+    <div class="hero">
+        <div class="title">
+            <h2>Welcome to the Team Expense Tracker</h2>
+        </div>
+        <div class="formcontainer">
+            <form id="expenseform">
+                <div class="elements">
+                <label for="description">Description</label>
+                <input type="text" id="description" class="forminput" placeholder="e.g., Lunch"><br>
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" class="forminput" placeholder="$0.00"><br>
+
+                <label for="category">Category</label>
+                <select id="category" class="forminput" aria-placeholder="food">
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                </select><br>
+
+                <label for="payer">Paid By</label>
+                <input type="text" id="payer" class="forminput" placeholder="e.g., Charlton"><br><br>
+
+                <div class="btn">
+                    <button type="submit">Add Expense</button>
+                </div>
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <h2 id="total">Total Amount: $0</h2>
+            <ul id="expenselist"></ul>
+        </div>
+    </div>
+    <footer>
+        <p class="footertext">&copy; Charlton Lenso || All Rights reserved</p>
+    </footer>
+</body>
+</html>
