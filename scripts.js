@@ -71,38 +71,3 @@ form.addEventListener('submit', function(event){
 
 
 
-// let expenses = [];
-
-// const form = document.getElementById('expenseform');
-// const list = document.getElementById('expenselist');
-// const total = document.getElementById('total');
-// const descriptionInput = document.getElementById('description');
-// const amountInput = document.getElementById('amount');
-// const categoryInput = document.getElementById('category');
-// const payerInput = document.getElementById('payer');
-
-// function renderexpenses() {
-//         list.innerHTML = "";
-
-//         expenses.forEach(function(expense) {
-
-//             const li = document.createElement('li');
-//             li.textContent = `${expense.description} - $${expense.amount}, ${expense.category}, paid by ${expense.payer}`;
-//             list.appendChild(li);
-//         });
-//     }
-
-// form.addEventListener('submit', function(event){
-//     event.preventDefault();
-
-//     const newExpenses = {
-//         description: descriptionInput.value,
-//         amount: Number(amountInput.value),
-//         category: categoryInput.value,
-//         payer: payerInput.value
-//     };
-
-//     expenses.push(newExpenses);
-//     renderexpenses();
-// });
-
